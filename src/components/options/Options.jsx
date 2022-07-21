@@ -13,8 +13,8 @@ export const Feedback = ({ onFeedback, options }) => {
       background="accent"
     >
       {options.map(option => (
-        <li>
-          <Buttons key={option} type="button" onClick={onFeedback}>
+        <li key={option}>
+          <Buttons  type="button" onClick={onFeedback}>
             {option}
           </Buttons>
         </li>

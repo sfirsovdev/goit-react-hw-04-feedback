@@ -45,6 +45,8 @@ export function App() {
       flexDirection="column"
       ml="auto"
       mr="auto"
+      pl="20px"
+      pr="20px"
       bg="accent"
       borderRadius="normal"
       boxShadow="4px 11px 49px 1px rgba(173,186,222,1)"
@@ -54,7 +56,7 @@ export function App() {
         <Feedback options={options} onFeedback={handleFeedback} />
       </Box>
 
-      <Box as="section" display="flex" flexDirection="column" width="50%">
+      <Box as="section" display="flex" flexDirection="column" width="60%" alignItems="center" >
         <h2>Statistics</h2>
         {totalFeedback() ? (
           <Statistics
@@ -65,7 +67,7 @@ export function App() {
             positiveFeedback={positiveFeedback()}
           />
         ) : (
-          <h3>No feedback given</h3>
+          <h3>No feedback given </h3 >
         )}
       </Box>
     </Box>
